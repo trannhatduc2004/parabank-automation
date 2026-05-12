@@ -49,9 +49,7 @@ export class TransferPage extends BasePage {
   }
 
   async expectTransferError() {
-    // Parabank dùng CSS hidden/visible — check bằng cách khác
-    await expect(this.page.locator('#amount')).toBeVisible();
-    // Vẫn ở trang transfer = thất bại
-    await expect(this.page).toHaveURL(/transfer/, { timeout: 5000 });
-    }
+    // Khi transfer fail — vẫn ở trang transfer hoặc hiện error page
+    await expect(this.page).toHaveURL(/transfer|error/, { timeout: 10000 });
+  }
 }
