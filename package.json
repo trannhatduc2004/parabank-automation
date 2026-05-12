@@ -11,8 +11,12 @@
     "test:regression": "playwright test --grep @regression",
     "allure:serve": "allure serve allure-results",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
-    "report": "playwright show-report reports/html"
-  },
+    "report": "playwright show-report reports/html",
+    "perf:load":   "k6 run src/performance/load-test.js",
+    "perf:stress": "k6 run src/performance/stress-test.js",
+    "perf:spike":  "k6 run src/performance/spike-test.js",
+    "perf:all":    "k6 run src/performance/load-test.js && k6 run src/performance/stress-test.js"
+      },
   "keywords": [],
   "author": "",
   "license": "ISC",
