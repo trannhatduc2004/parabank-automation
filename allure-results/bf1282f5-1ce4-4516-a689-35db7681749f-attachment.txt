@@ -1,0 +1,2 @@
+⚠️ SECURITY ISSUE: API accessible without auth, status: 404
+⚠️ SECURITY ISSUE: API accessible without auth, status: 400

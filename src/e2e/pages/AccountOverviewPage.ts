@@ -34,7 +34,9 @@ export class AccountOverviewPage extends BasePage {
   }
 
   async getAccountCount() {
+    await this.page.waitForTimeout(2000); // Chờ table load
     const rows = this.page.locator('#accountTable tbody tr');
+    await rows.first().waitFor({ state: 'visible', timeout: 10000 }).catch(() => {});
     return await rows.count();
   }
 }

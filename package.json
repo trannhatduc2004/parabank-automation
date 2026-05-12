@@ -15,7 +15,9 @@
     "perf:load":   "k6 run src/performance/load-test.js",
     "perf:stress": "k6 run src/performance/stress-test.js",
     "perf:spike":  "k6 run src/performance/spike-test.js",
-    "perf:all":    "k6 run src/performance/load-test.js && k6 run src/performance/stress-test.js"
+    "perf:all":    "k6 run src/performance/load-test.js && k6 run src/performance/stress-test.js",
+    "test:security": "playwright test --project=chromium src/e2e/tests/security.spec.ts"
+
       },
   "keywords": [],
   "author": "",

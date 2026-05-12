@@ -1,0 +1,1 @@
+⚠️ SECURITY ISSUE: API accessible without auth, status: 200

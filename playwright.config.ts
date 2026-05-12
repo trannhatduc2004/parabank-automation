@@ -46,6 +46,6 @@ export default defineConfig({
       name: 'api',
       testMatch: '**/api/**/*.spec.ts',
       use: { baseURL: process.env.API_URL || 'http://localhost:8080/parabank/services/bank' },
-    },
+    }
   ],
 });

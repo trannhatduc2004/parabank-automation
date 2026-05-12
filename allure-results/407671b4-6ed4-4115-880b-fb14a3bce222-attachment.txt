@@ -1,0 +1,9 @@
+Response headers: {
+  "set-cookie": "JSESSIONID=B4F304FF7B4B008536B57AF9DE6CE1C4; Path=/parabank; HttpOnly",
+  "content-type": "text/html;charset=ISO-8859-1",
+  "content-language": "en-US",
+  "content-length": "5798",
+  "date": "Tue, 12 May 2026 10:06:17 GMT",
+  "keep-alive": "timeout=20",
+  "connection": "keep-alive"
+}
